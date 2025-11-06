@@ -62,6 +62,24 @@ uv sync
 
 The trained yolo weights will be stored in the `resources` dir as the `best.pt`.  And it will be automatically download from https://github.com/linkedlist771/SoraWatermarkCleaner/releases/download/V0.0.1/best.pt . The `Lama` model is downloaded from https://github.com/Sanster/models/releases/download/add_big_lama/big-lama.pt, and will be stored in the torch cache dir. Both downloads are automatic, if you fail, please check your internet status.
 
+3. Batch processing
+Use the cli.py for batch processing
+
+```
+python cli.py [-h] -i INPUT -o OUTPUT [-p PATTERN]
+```
+
+examples:
+
+```
+# Process all .mp4 files in input folder
+python batch_process.py -i /path/to/input -o /path/to/output
+# Process all .mov files
+python batch_process.py -i /path/to/input -o /path/to/output --pattern "*.mov"
+# Process all video files (mp4, mov, avi)
+python batch_process.py -i /path/to/input -o /path/to/output --pattern "*.{mp4,mov,avi}"
+```
+
 ## 3. One-Click Portable Version
 
 For users who prefer a ready-to-use solution without manual installation, we provide a **one-click portable distribution** that includes all dependencies pre-configured.
