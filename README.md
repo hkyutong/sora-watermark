@@ -1,4 +1,4 @@
-# Sora Watermark Cleaner (SoraWm)
+# Sora 2 去水印
 
 **⚡️ 一键移除 OpenAI Sora 生成视频中的官方水印（含用户名）**  
 **⚡️ One-click removal of official watermarks (including username) from OpenAI Sora videos**
